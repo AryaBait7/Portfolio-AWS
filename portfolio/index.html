@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name — Cloud Engineer</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ============ SIDE NAV ============ -->
+<nav class="side-nav">
+  <span class="logo">YOUR.NAME</span>
+  <ul>
+    <li><a href="#home" class="nav-link active" data-icon="home"><i class="fas fa-house"></i></a></li>
+    <li><a href="#about" class="nav-link" data-icon="about"><i class="fas fa-user"></i></a></li>
+    <li><a href="#projects" class="nav-link" data-icon="projects"><i class="fas fa-diagram-project"></i></a></li>
+    <li><a href="#blog" class="nav-link" data-icon="blog"><i class="fas fa-pen-nib"></i></a></li>
+    <li><a href="#contact" class="nav-link" data-icon="contact"><i class="fas fa-envelope"></i></a></li>
+  </ul>
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fas fa-circle-half-stroke"></i></button>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">// cloud &amp; devops engineer</span>
+      <h1>Hi, I'm <span class="accent">Your Name.</span><br>I build cloud infrastructure that ships itself.</h1>
+      <p class="lede">
+        I design, automate, and secure infrastructure on AWS — from CI/CD pipelines
+        to Infrastructure as Code — so teams can deploy with confidence, not caution.
+      </p>
+      <div class="cta-row">
+        <a href="assets/resume.pdf" class="btn btn-primary"><i class="fas fa-download"></i> Download Résumé</a>
+        <a href="#projects" class="btn btn-ghost"><i class="fas fa-arrow-down"></i> View Projects</a>
+      </div>
+    </div>
+
+    <div class="terminal" aria-hidden="true">
+      <div class="terminal-bar">
+        <span class="terminal-dot red"></span>
+        <span class="terminal-dot yellow"></span>
+        <span class="terminal-dot green"></span>
+        <span class="terminal-title">deploy.sh</span>
+      </div>
+      <div class="terminal-body" id="terminalBody"></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- ============ ABOUT ============ -->
+  <section class="container" id="about">
+    <div class="section-head reveal">
+      <span class="eyebrow">01 · about</span>
+      <h2>Turning infrastructure into <span class="accent">code</span>.</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-copy reveal">
+        <p>
+          I'm an aspiring cloud engineer focused on building scalable, secure, and
+          cost-efficient systems on AWS. I like taking manual, error-prone processes
+          and turning them into repeatable pipelines — the kind of work that lets a
+          team ship on Friday afternoon without worrying.
+        </p>
+        <p>
+          Outside of infra work, I spend time contributing to open-source tooling
+          and writing about what I learn along the way.
+        </p>
+
+        <div class="stat-row">
+          <div class="stat"><div class="num">12+</div><div class="label">Projects shipped</div></div>
+          <div class="stat"><div class="num">6</div><div class="label">AWS services used in prod</div></div>
+          <div class="stat"><div class="num">99.9%</div><div class="label">Uptime target</div></div>
+        </div>
+      </div>
+
+      <div class="stack-grid reveal">
+        <div class="stack-item">
+          <div class="stack-name"><b>AWS (EC2, S3, Lambda)</b><span>90%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-fill="90"></div></div>
+        </div>
+        <div class="stack-item">
+          <div class="stack-name"><b>Terraform / IaC</b><span>82%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-fill="82"></div></div>
+        </div>
+        <div class="stack-item">
+          <div class="stack-name"><b>CI/CD (GitHub Actions)</b><span>85%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-fill="85"></div></div>
+        </div>
+        <div class="stack-item">
+          <div class="stack-name"><b>Docker / Containers</b><span>78%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-fill="78"></div></div>
+        </div>
+        <div class="stack-item">
+          <div class="stack-name"><b>Networking &amp; Security</b><span>75%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-fill="75"></div></div>
+        </div>
+        <div class="stack-item">
+          <div class="stack-name"><b>Python / Scripting</b><span>80%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-fill="80"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline reveal">
+      <h3>Timeline</h3>
+
+      <div class="tl-item">
+        <div class="tl-date">2024 — Present</div>
+        <div>
+          <div class="tl-role">Cloud Engineer Intern</div>
+          <div class="tl-org">Company Name</div>
+          <div class="tl-desc">Automated deployment pipelines with GitHub Actions and Terraform, cutting release time from hours to minutes.</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-date">2023 — 2024</div>
+        <div>
+          <div class="tl-role">AWS Cloud Practitioner Certified</div>
+          <div class="tl-org">Amazon Web Services</div>
+          <div class="tl-desc">Built hands-on projects across S3, EC2, IAM, and Lambda to apply core cloud concepts.</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-date">2022 — 2023</div>
+        <div>
+          <div class="tl-role">B.Sc. Computer Science</div>
+          <div class="tl-org">Your University</div>
+          <div class="tl-desc">Focused coursework on distributed systems, networking, and software engineering.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="container" id="projects">
+    <div class="section-head reveal">
+      <span class="eyebrow">02 · projects</span>
+      <h2>Things I've <span class="accent">built &amp; deployed</span>.</h2>
+      <p>A few projects that show how I use AWS in practice.</p>
+    </div>
+
+    <div class="project-grid">
+      <div class="project-card reveal">
+        <span class="project-tag">S3 · CloudFront · Route 53</span>
+        <h3>Static Site Hosting Pipeline</h3>
+        <p>Hosted a static site on S3 behind CloudFront with OAC, ACM-issued HTTPS, and a custom domain via Route 53.</p>
+        <div class="project-links">
+          <a href="#"><i class="fab fa-github"></i> Code</a>
+          <a href="#"><i class="fas fa-arrow-up-right-from-square"></i> Live</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <span class="project-tag">CodePipeline · CodeBuild</span>
+        <h3>CI/CD for a Static Portfolio</h3>
+        <p>Automated build &amp; deploy from GitHub to S3/CloudFront on every push, with cache invalidation baked into the build step.</p>
+        <div class="project-links">
+          <a href="#"><i class="fab fa-github"></i> Code</a>
+          <a href="#"><i class="fas fa-arrow-up-right-from-square"></i> Live</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <span class="project-tag">Lambda · API Gateway · DynamoDB</span>
+        <h3>Serverless Contact API</h3>
+        <p>Built a serverless backend for a contact form: API Gateway triggers a Lambda that stores submissions in DynamoDB.</p>
+        <div class="project-links">
+          <a href="#"><i class="fab fa-github"></i> Code</a>
+          <a href="#"><i class="fas fa-arrow-up-right-from-square"></i> Live</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <span class="project-tag">Terraform · IAM</span>
+        <h3>Infrastructure as Code Starter</h3>
+        <p>A reusable Terraform module set for standing up S3 + CloudFront + IAM roles with least-privilege access baked in.</p>
+        <div class="project-links">
+          <a href="#"><i class="fab fa-github"></i> Code</a>
+          <a href="#"><i class="fas fa-arrow-up-right-from-square"></i> Live</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BLOG ============ -->
+  <section class="container" id="blog">
+    <div class="section-head reveal">
+      <span class="eyebrow">03 · writing</span>
+      <h2>Notes from the <span class="accent">console</span>.</h2>
+    </div>
+
+    <div class="blog-grid">
+      <div class="blog-card reveal">
+        <span class="blog-date">Jun 2026</span>
+        <h4>Getting Started with AWS: A Beginner's Guide</h4>
+        <a href="#">Read post →</a>
+      </div>
+      <div class="blog-card reveal">
+        <span class="blog-date">May 2026</span>
+        <h4>S3 + CloudFront: Locking Down a Public Bucket</h4>
+        <a href="#">Read post →</a>
+      </div>
+      <div class="blog-card reveal">
+        <span class="blog-date">Apr 2026</span>
+        <h4>CI/CD with GitHub Actions &amp; AWS</h4>
+        <a href="#">Read post →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="container" id="contact">
+    <div class="section-head reveal">
+      <span class="eyebrow">04 · contact</span>
+      <h2>Let's build <span class="accent">something.</span></h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="reveal">
+        <p style="color:var(--text-dim)">Have a project in mind, or just want to talk cloud architecture? My inbox is open.</p>
+        <ul class="contact-list">
+          <li><i class="fas fa-location-dot"></i> Your City, Country</li>
+          <li><i class="fas fa-envelope"></i> your.email@example.com</li>
+          <li><i class="fas fa-phone"></i> +00 000 000 0000</li>
+        </ul>
+        <div class="social-row">
+          <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+
+      <form class="form-grid reveal" id="contactForm">
+        <div class="form-row">
+          <input type="text" placeholder="Your name" required>
+          <input type="email" placeholder="Your email" required>
+        </div>
+        <input type="text" placeholder="Subject" required>
+        <textarea placeholder="Your message..." required></textarea>
+        <button type="submit" class="btn btn-primary" style="justify-self:start;"><i class="fas fa-paper-plane"></i> Send message</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="year"></span> Your Name — built with HTML, CSS &amp; JS, hosted on AWS.</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
