@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Name — Cloud Engineer</title>
+<title>Arya Bait — Business Analyst & Cloud Enthusiast</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,41 +13,54 @@
 </head>
 <body>
 
-<!-- ============ SIDE NAV ============ -->
+<!-- cursor fx -->
+<div class="cursor-glow" id="cursorGlow"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- ============ TOP NAV ============ -->
 <nav class="side-nav">
-  <span class="logo">YOUR.NAME</span>
+  <div class="brand">
+    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+      <circle class="brand-mark-bg" cx="24" cy="24" r="24"/>
+      <path class="brand-mark-cloud" d="M14 30h17a5 5 0 0 0 0-10 8 8 0 0 0-15-3 6 6 0 0 0-2 13Z"/>
+      <circle class="brand-mark-blip" cx="33" cy="16" r="2.6"/>
+    </svg>
+    <span class="logo">ARYA.<b>BAIT</b></span>
+  </div>
   <ul>
-    <li><a href="#home" class="nav-link active" data-icon="home"><i class="fas fa-house"></i></a></li>
-    <li><a href="#about" class="nav-link" data-icon="about"><i class="fas fa-user"></i></a></li>
-    <li><a href="#projects" class="nav-link" data-icon="projects"><i class="fas fa-diagram-project"></i></a></li>
-    <li><a href="#blog" class="nav-link" data-icon="blog"><i class="fas fa-pen-nib"></i></a></li>
-    <li><a href="#contact" class="nav-link" data-icon="contact"><i class="fas fa-envelope"></i></a></li>
+    <li><a href="#home" class="nav-link active"><i class="fas fa-house"></i><span class="nav-label">Home</span></a></li>
+    <li><a href="#about" class="nav-link"><i class="fas fa-user"></i><span class="nav-label">About</span></a></li>
+    <li><a href="#projects" class="nav-link"><i class="fas fa-diagram-project"></i><span class="nav-label">Projects</span></a></li>
+    <li><a href="#achievements" class="nav-link"><i class="fas fa-award"></i><span class="nav-label">Achievements</span></a></li>
+    <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i><span class="nav-label">Contact</span></a></li>
   </ul>
   <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fas fa-circle-half-stroke"></i></button>
 </nav>
 
 <!-- ============ HERO ============ -->
 <header class="hero" id="home">
+  <canvas id="bgGrid" aria-hidden="true"></canvas>
   <div class="container hero-grid">
     <div>
-      <span class="eyebrow">// cloud &amp; devops engineer</span>
-      <h1>Hi, I'm <span class="accent">Your Name.</span><br>I build cloud infrastructure that ships itself.</h1>
-      <p class="lede">
-        I design, automate, and secure infrastructure on AWS — from CI/CD pipelines
-        to Infrastructure as Code — so teams can deploy with confidence, not caution.
+      <span class="eyebrow">// business analyst · aws operations</span>
+      <h1 class="reveal">Hi, I'm <span class="accent">Arya Bait.</span><br>I bridge business strategy with cloud &amp; data.</h1>
+      <p class="lede reveal">
+        3 years across operations, CRM tooling, and AWS partner workflows —
+        turning pipeline data and process insight into measurable business outcomes.
+        Currently pursuing a Master's in Information Technology in New Zealand.
       </p>
-      <div class="cta-row">
-        <a href="assets/resume.pdf" class="btn btn-primary"><i class="fas fa-download"></i> Download Résumé</a>
-        <a href="#projects" class="btn btn-ghost"><i class="fas fa-arrow-down"></i> View Projects</a>
+      <div class="cta-row reveal">
+        <a href="assets/resume.pdf" class="btn btn-primary magnetic" download><i class="fas fa-download"></i> Download Résumé</a>
+        <a href="#projects" class="btn btn-ghost magnetic"><i class="fas fa-arrow-down"></i> View Work</a>
       </div>
     </div>
 
-    <div class="terminal" aria-hidden="true">
+    <div class="terminal reveal" aria-hidden="true">
       <div class="terminal-bar">
         <span class="terminal-dot red"></span>
         <span class="terminal-dot yellow"></span>
         <span class="terminal-dot green"></span>
-        <span class="terminal-title">deploy.sh</span>
+        <span class="terminal-title">ops_pipeline.sh</span>
       </div>
       <div class="terminal-body" id="terminalBody"></div>
     </div>
@@ -59,53 +72,54 @@
   <section class="container" id="about">
     <div class="section-head reveal">
       <span class="eyebrow">01 · about</span>
-      <h2>Turning infrastructure into <span class="accent">code</span>.</h2>
+      <h2>Where business meets <span class="accent">the cloud</span>.</h2>
     </div>
 
     <div class="about-grid">
       <div class="about-copy reveal">
         <p>
-          I'm an aspiring cloud engineer focused on building scalable, secure, and
-          cost-efficient systems on AWS. I like taking manual, error-prone processes
-          and turning them into repeatable pipelines — the kind of work that lets a
-          team ship on Friday afternoon without worrying.
+          I'm a Business Analyst with hands-on experience across operations, CRM systems,
+          and AWS partner workflows — most recently managing APN pipeline tracking and
+          alliance operations between Quantiphi Analytics and AWS's GTM and DevOps teams.
         </p>
         <p>
-          Outside of infra work, I spend time contributing to open-source tooling
-          and writing about what I learn along the way.
+          My background spans mathematics, statistics, and an Honours foundation in
+          AI/ML, which I now pair with practical web development and cloud fundamentals.
+          I'm currently based in Hamilton, New Zealand, pursuing a Master of Information
+          Technology at the University of Waikato.
         </p>
 
         <div class="stat-row">
-          <div class="stat"><div class="num">12+</div><div class="label">Projects shipped</div></div>
-          <div class="stat"><div class="num">6</div><div class="label">AWS services used in prod</div></div>
-          <div class="stat"><div class="num">99.9%</div><div class="label">Uptime target</div></div>
+          <div class="stat"><div class="num">3+</div><div class="label">Years professional experience</div></div>
+          <div class="stat"><div class="num">Top 20</div><div class="label">CoDecode India, IIT Bombay</div></div>
+          <div class="stat"><div class="num">1st</div><div class="label">Place, DJS Spark 2024</div></div>
         </div>
       </div>
 
       <div class="stack-grid reveal">
-        <div class="stack-item">
-          <div class="stack-name"><b>AWS (EC2, S3, Lambda)</b><span>90%</span></div>
-          <div class="bar-track"><div class="bar-fill" data-fill="90"></div></div>
+        <div class="stack-item tilt">
+          <div class="stack-name"><b>AWS &amp; Cloud Operations</b><span>80%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-fill="80"></div></div>
         </div>
-        <div class="stack-item">
-          <div class="stack-name"><b>Terraform / IaC</b><span>82%</span></div>
+        <div class="stack-item tilt">
+          <div class="stack-name"><b>Data Structures &amp; Algorithms</b><span>82%</span></div>
           <div class="bar-track"><div class="bar-fill" data-fill="82"></div></div>
         </div>
-        <div class="stack-item">
-          <div class="stack-name"><b>CI/CD (GitHub Actions)</b><span>85%</span></div>
-          <div class="bar-track"><div class="bar-fill" data-fill="85"></div></div>
-        </div>
-        <div class="stack-item">
-          <div class="stack-name"><b>Docker / Containers</b><span>78%</span></div>
+        <div class="stack-item tilt">
+          <div class="stack-name"><b>HTML / CSS / JavaScript</b><span>78%</span></div>
           <div class="bar-track"><div class="bar-fill" data-fill="78"></div></div>
         </div>
-        <div class="stack-item">
-          <div class="stack-name"><b>Networking &amp; Security</b><span>75%</span></div>
+        <div class="stack-item tilt">
+          <div class="stack-name"><b>Selenium &amp; Test Automation</b><span>75%</span></div>
           <div class="bar-track"><div class="bar-fill" data-fill="75"></div></div>
         </div>
-        <div class="stack-item">
-          <div class="stack-name"><b>Python / Scripting</b><span>80%</span></div>
-          <div class="bar-track"><div class="bar-fill" data-fill="80"></div></div>
+        <div class="stack-item tilt">
+          <div class="stack-name"><b>SQL (MySQL / PostgreSQL)</b><span>72%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-fill="72"></div></div>
+        </div>
+        <div class="stack-item tilt">
+          <div class="stack-name"><b>Python &amp; Flask</b><span>70%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-fill="70"></div></div>
         </div>
       </div>
     </div>
@@ -114,29 +128,47 @@
       <h3>Timeline</h3>
 
       <div class="tl-item">
-        <div class="tl-date">2024 — Present</div>
+        <div class="tl-date">Jul 2026 — Present</div>
         <div>
-          <div class="tl-role">Cloud Engineer Intern</div>
-          <div class="tl-org">Company Name</div>
-          <div class="tl-desc">Automated deployment pipelines with GitHub Actions and Terraform, cutting release time from hours to minutes.</div>
+          <div class="tl-role">Master of Information Technology</div>
+          <div class="tl-org">University of Waikato, New Zealand</div>
+          <div class="tl-desc">Postgraduate study building on a professional background in business analysis and AI/ML.</div>
         </div>
       </div>
 
       <div class="tl-item">
-        <div class="tl-date">2023 — 2024</div>
+        <div class="tl-date">Apr 2026 — Jun 2026</div>
         <div>
-          <div class="tl-role">AWS Cloud Practitioner Certified</div>
-          <div class="tl-org">Amazon Web Services</div>
-          <div class="tl-desc">Built hands-on projects across S3, EC2, IAM, and Lambda to apply core cloud concepts.</div>
+          <div class="tl-role">Business Analyst (AWS)</div>
+          <div class="tl-org">Quantiphi Analytics</div>
+          <div class="tl-desc">Worked on AWS partner opportunities and pipeline tracking across Salesforce and internal CRM systems, supporting alliance operations with AWS's GTM and DevOps teams via Partner Central, Pipedrive, Amazon Q, Slack, and Asana.</div>
         </div>
       </div>
 
       <div class="tl-item">
-        <div class="tl-date">2022 — 2023</div>
+        <div class="tl-date">Feb 2024 — Jul 2025</div>
         <div>
-          <div class="tl-role">B.Sc. Computer Science</div>
-          <div class="tl-org">Your University</div>
-          <div class="tl-desc">Focused coursework on distributed systems, networking, and software engineering.</div>
+          <div class="tl-role">Placement Coordinator</div>
+          <div class="tl-org">Dwarkadas J. Sanghvi College of Engineering</div>
+          <div class="tl-desc">Built and maintained employer relationships and ran student-facing workshops and sessions to support the placement process.</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-date">May 2024 — Jul 2024</div>
+        <div>
+          <div class="tl-role">Business Development Intern</div>
+          <div class="tl-org">Doozyworks Studios</div>
+          <div class="tl-desc">Ran market and competitor research, maintained CRM databases, and prepared pitch decks using Apollo.io and Canva.</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-date">Dec 2021 — Apr 2025</div>
+        <div>
+          <div class="tl-role">B.Tech, Electronics &amp; Telecommunications — Honours in AI/ML</div>
+          <div class="tl-org">University of Mumbai · CGPA 7.57</div>
+          <div class="tl-desc">Undergraduate foundation in engineering, mathematics, and applied AI/ML.</div>
         </div>
       </div>
     </div>
@@ -146,75 +178,54 @@
   <section class="container" id="projects">
     <div class="section-head reveal">
       <span class="eyebrow">02 · projects</span>
-      <h2>Things I've <span class="accent">built &amp; deployed</span>.</h2>
-      <p>A few projects that show how I use AWS in practice.</p>
+      <h2>Things I've <span class="accent">built &amp; tested</span>.</h2>
+      <p>Hands-on projects spanning automation and data analysis.</p>
     </div>
 
     <div class="project-grid">
-      <div class="project-card reveal">
-        <span class="project-tag">S3 · CloudFront · Route 53</span>
-        <h3>Static Site Hosting Pipeline</h3>
-        <p>Hosted a static site on S3 behind CloudFront with OAC, ACM-issued HTTPS, and a custom domain via Route 53.</p>
+      <div class="project-card tilt reveal">
+        <span class="project-tag">Java · Selenium · TestNG · Maven</span>
+        <h3>Selenium Automation Framework</h3>
+        <p>Built a Selenium WebDriver framework in Java to automate login and validation scenarios for an e-commerce admin portal, running test cases via TestNG with dependencies managed through Apache Maven.</p>
         <div class="project-links">
           <a href="#"><i class="fab fa-github"></i> Code</a>
-          <a href="#"><i class="fas fa-arrow-up-right-from-square"></i> Live</a>
         </div>
       </div>
 
-      <div class="project-card reveal">
-        <span class="project-tag">CodePipeline · CodeBuild</span>
-        <h3>CI/CD for a Static Portfolio</h3>
-        <p>Automated build &amp; deploy from GitHub to S3/CloudFront on every push, with cache invalidation baked into the build step.</p>
+      <div class="project-card tilt reveal">
+        <span class="project-tag">EDA · BI · Data Analysis</span>
+        <h3>Airlines Analysis</h3>
+        <p>Analyzed airline occupancy and revenue trends through exploratory data analysis and BI techniques, generating insights for pricing optimization and route performance evaluation.</p>
         <div class="project-links">
           <a href="#"><i class="fab fa-github"></i> Code</a>
-          <a href="#"><i class="fas fa-arrow-up-right-from-square"></i> Live</a>
-        </div>
-      </div>
-
-      <div class="project-card reveal">
-        <span class="project-tag">Lambda · API Gateway · DynamoDB</span>
-        <h3>Serverless Contact API</h3>
-        <p>Built a serverless backend for a contact form: API Gateway triggers a Lambda that stores submissions in DynamoDB.</p>
-        <div class="project-links">
-          <a href="#"><i class="fab fa-github"></i> Code</a>
-          <a href="#"><i class="fas fa-arrow-up-right-from-square"></i> Live</a>
-        </div>
-      </div>
-
-      <div class="project-card reveal">
-        <span class="project-tag">Terraform · IAM</span>
-        <h3>Infrastructure as Code Starter</h3>
-        <p>A reusable Terraform module set for standing up S3 + CloudFront + IAM roles with least-privilege access baked in.</p>
-        <div class="project-links">
-          <a href="#"><i class="fab fa-github"></i> Code</a>
-          <a href="#"><i class="fas fa-arrow-up-right-from-square"></i> Live</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ BLOG ============ -->
-  <section class="container" id="blog">
+  <!-- ============ ACHIEVEMENTS ============ -->
+  <section class="container" id="achievements">
     <div class="section-head reveal">
-      <span class="eyebrow">03 · writing</span>
-      <h2>Notes from the <span class="accent">console</span>.</h2>
+      <span class="eyebrow">03 · achievements</span>
+      <h2>Recognition &amp; <span class="accent">certifications</span>.</h2>
     </div>
 
     <div class="blog-grid">
-      <div class="blog-card reveal">
-        <span class="blog-date">Jun 2026</span>
-        <h4>Getting Started with AWS: A Beginner's Guide</h4>
-        <a href="#">Read post →</a>
+      <div class="blog-card tilt reveal">
+        <span class="blog-date">IIT Bombay</span>
+        <h4>CoDecode Mumbai Zonal Finalist — Top 20 nationally</h4>
       </div>
-      <div class="blog-card reveal">
-        <span class="blog-date">May 2026</span>
-        <h4>S3 + CloudFront: Locking Down a Public Bucket</h4>
-        <a href="#">Read post →</a>
+      <div class="blog-card tilt reveal">
+        <span class="blog-date">National Competition</span>
+        <h4>DJS Spark 2024 Winner — 1st place, project report</h4>
       </div>
-      <div class="blog-card reveal">
-        <span class="blog-date">Apr 2026</span>
-        <h4>CI/CD with GitHub Actions &amp; AWS</h4>
-        <a href="#">Read post →</a>
+      <div class="blog-card tilt reveal">
+        <span class="blog-date">HackerRank</span>
+        <h4>4-Star Java, plus JavaScript Certification</h4>
+      </div>
+      <div class="blog-card tilt reveal">
+        <span class="blog-date">IIBA Endorsed</span>
+        <h4>Business Analysis Fundamentals Certification</h4>
       </div>
     </div>
   </section>
@@ -223,21 +234,22 @@
   <section class="container" id="contact">
     <div class="section-head reveal">
       <span class="eyebrow">04 · contact</span>
-      <h2>Let's build <span class="accent">something.</span></h2>
+      <h2>Let's <span class="accent">connect.</span></h2>
     </div>
 
     <div class="contact-grid">
       <div class="reveal">
-        <p style="color:var(--text-dim)">Have a project in mind, or just want to talk cloud architecture? My inbox is open.</p>
+        <p style="color:var(--text-dim)">Open to opportunities in business analysis, cloud operations, and anywhere the two overlap. My inbox is open.</p>
         <ul class="contact-list">
-          <li><i class="fas fa-location-dot"></i> Your City, Country</li>
-          <li><i class="fas fa-envelope"></i> your.email@example.com</li>
-          <li><i class="fas fa-phone"></i> +00 000 000 0000</li>
+          <li><i class="fas fa-location-dot"></i> Hamilton, New Zealand</li>
+          <li><i class="fas fa-envelope"></i> aryabait2003@gmail.com</li>
+          <li><i class="fas fa-phone"></i> +64 22 019 0209</li>
         </ul>
         <div class="social-row">
-          <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="#" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn" class="magnetic"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="GitHub" class="magnetic"><i class="fab fa-github"></i></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="HackerRank" class="magnetic"><i class="fab fa-hackerrank"></i></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="LeetCode" class="magnetic"><i class="fas fa-code"></i></a>
         </div>
       </div>
 
@@ -248,13 +260,13 @@
         </div>
         <input type="text" placeholder="Subject" required>
         <textarea placeholder="Your message..." required></textarea>
-        <button type="submit" class="btn btn-primary" style="justify-self:start;"><i class="fas fa-paper-plane"></i> Send message</button>
+        <button type="submit" class="btn btn-primary magnetic" style="justify-self:start;"><i class="fas fa-paper-plane"></i> Send message</button>
       </form>
     </div>
   </section>
 </main>
 
-<footer>© <span id="year"></span> Your Name — built with HTML, CSS &amp; JS, hosted on AWS.</footer>
+<footer>© <span id="year"></span> Arya Bait — built with HTML, CSS &amp; JS, hosted on AWS.</footer>
 
 <script src="js/app.js"></script>
 </body>
